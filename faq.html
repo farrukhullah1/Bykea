@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bykea | FAQs</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/svg+xml" href="./assets/cropped-fav-icon-1-32x32.png">
+
+<style>
+    /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo a img {
+  height: 30px;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Link Styling */
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #00aa2f;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  opacity: 0.7;
+  color: #008d45;
+}
+
+/* Contact Button */
+.nav-btn a {
+  background: #00aa2f;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.nav-btn a:hover {
+  background: #008d45;
+}
+
+/* Mobile Menu Icon */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #00aa2f;
+}
+
+/* *****************************
+   Responsive Navbar (tablet/mobile)
+   ***************************** */
+@media (max-width: 992px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-menu ul li a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+    /* Hero */
+    .faq-hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .faq-hero h1 {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+        .illustration {
+      max-width: 100%;
+      margin: 0 auto 60px;
+    }
+
+
+
+
+    
+.wrapper{
+  max-width:1100px;
+  margin-left:40px;
+  margin-right:auto;
+  padding-top: 40px;
+}
+
+
+
+/* Light Heading */
+.light-heading{
+  font-size:14px;
+  color:#9ca3af;
+  margin-bottom:14px;
+  letter-spacing:.04em;
+}
+
+/* Paragraph */
+.description{
+  font-size:17px;
+  line-height:1.4;
+  font-weight:500;
+  max-width:950px;
+  color:#111827;
+}
+
+/* Search Bar */
+.search-box{
+  margin:50px 0 45px;
+  position:relative;
+}
+
+.search-box input{
+  width:100%;
+  padding:20px 60px 20px 26px;
+  font-size:16px;
+  border:none;
+  border-radius:16px;
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
+  outline:none;
+}
+
+.search-box .icon{
+  position:absolute;
+  right:22px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:20px;
+  color:#9ca3af;
+}
+
+/* Buttons */
+.buttons{
+  display:flex;
+  gap:18px;
+}
+
+.btn{
+  padding:12px 28px;
+  border-radius:999px;
+  font-size:15px;
+  font-weight:600;
+  border:none;
+  background:#f3f4f6;
+  color:#9ca3af;
+  cursor:pointer;
+}
+
+.btn.active{
+  background:#ecfdf3;
+  color:#00b140;
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .description{
+    font-size:17px;
+  }
+  .buttons{
+    flex-wrap:wrap;
+  }
+}
+
+
+
+
+
+/* Container */
+.container{
+  max-width:1100px;
+  padding-left: 40px;
+  padding-top: 40px;
+
+}
+
+/* Section title */
+.section-title{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+/* FAQ Card */
+.faq-item{
+  background:#ffffff;
+  border-radius:18px;
+  padding:26px 30px;
+  margin-bottom:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  cursor:pointer;
+}
+
+/* Question row */
+.question{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:18px;
+  font-weight:600;
+}
+
+/* Arrow */
+.arrow{
+  font-size:22px;
+  transition:.3s;
+}
+
+/* Answer */
+.answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .4s ease;
+}
+
+.answer p{
+  margin-top:18px;
+  font-size:15px;
+  line-height:1.8;
+  color:#6b7280;
+}
+
+/* Active */
+.faq-item.active .answer{
+  max-height:500px;
+}
+
+.faq-item.active .arrow{
+  transform:rotate(180deg);
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .container{
+    padding:40px 16px;
+  }
+
+  .section-title{
+    font-size:22px;
+  }
+
+  .faq-item{
+    padding:22px;
+  }
+
+  .question{
+    font-size:16px;
+  }
+}
+
+
+
+
+/* Section */
+.testimonial-section{
+  max-width:1200px;
+  margin:auto;
+  padding:80px 20px;
+}
+
+/* Headings */
+.small-title{
+  font-size:13px;
+  font-weight:600;
+  color:#6b7280;
+  letter-spacing:.08em;
+  margin-bottom:12px;
+}
+
+.main-title{
+  font-size:40px;
+  font-weight:700;
+  margin-bottom:40px;
+}
+
+/* Slider */
+.slider{
+  position:relative;
+  overflow:hidden;
+}
+
+.slides{
+  display:flex;
+  transition:transform .6s ease;
+}
+
+.slide{
+  min-width:100%;
+}
+
+/* Card */
+.testimonial-card{
+  background:#fff;
+  border-radius:22px;
+  padding:30px;
+  display:flex;
+  gap:40px;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+  align-items:center;
+}
+
+/* Image */
+.testimonial-image img{
+  width:420px;
+  height:260px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* Text */
+.testimonial-content{
+  max-width:520px;
+}
+
+.testimonial-content p{
+  font-size:18px;
+  line-height:1.7;
+}
+
+.author{
+  margin-top:20px;
+  font-weight:600;
+}
+
+/* Dots */
+.dots{
+  display:flex;
+  gap:10px;
+  margin-top:30px;
+}
+
+.dot{
+  width:34px;
+  height:6px;
+  background:#d1d5db;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.dot.active{
+  background:#00b140;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .testimonial-card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .testimonial-image img{
+    width:100%;
+    height:240px;
+  }
+
+  .main-title{
+    font-size:32px;
+  }
+}
+
+
+
+    .footer {
+  background: #252b48;
+  color: #ffffff;
+  padding: 60px 70px 30px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 40px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* ✅ IMPORTANT */
+}
+
+
+.app-buttons img {
+  height: 40px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  opacity: 1;
+}
+
+.mt {
+  margin-top: 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.social span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 40px 30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="./assets/Bykea_logo.svg" alt="Bykea Logo">
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./partner.html">Partner</a></li>
+        <li><a href="./franchise.html">Franchises</a></li>
+        <li><a href="./contact.html">Help Center</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Button -->
+    <div class="nav-btn">
+      <a href="./contact.html">Contact Bykea</a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  </div>
+</header>
+
+
+
+    <!-- Hero -->
+    <section class="faq-hero">
+      <h1>We are here to help</h1>
+      <img src="./assets/contact-img.png" alt="City Illustration" class="illustration" />
+    </section>
+
+<section>
+    <div class="wrapper">
+  <div class="light-heading">We’ve Got The Answers</div>
+
+  <p class="description">
+    We’ve answered some of our most common queries but you can contact us directly
+    for any further information. Our call center representatives are available
+    for you 24/7. Call us at <strong>021 38654444</strong> or email
+    <strong>cs@bykea.com</strong>
+  </p>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search Bykea FAQs">
+    <span class="icon">🔍</span>
+  </div>
+
+  <div class="buttons">
+  <button class="btn active" id="btn-customers">Customers</button>
+  <button class="btn" id="btn-partners">Partners</button>
+  <button class="btn" id="btn-businesses">Businesses</button>
+</div>
+
+
+</div>
+</section>
+
+
+
+<section id="Customers">
+  <div class="container">
+
+    <div class="section-title">Customers</div>
+
+    <!-- FAQ 1 (Open) -->
+    <div class="faq-item active">
+      <div class="question">
+       I got into an accident, now what?
+        <span class="arrow">⌃</span>
+      </div>
+      <div class="answer">
+        <p>
+         Whether you are a rider or a driver, we have you covered. Your safety is our utmost priority, contact us at +92 21-38654444 to find out your coverage.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-item">
+      <div class="question">
+        Can I use BYKEA without a smartphone?
+        <span class="arrow">⌄</span>
+      </div>
+      <div class="answer">
+        <p>
+          Yes you can! We pride ourselves for making services available for everyone in Pakistan. Just give us a call at +92 307-1234567 to book your Bykea partner.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-item">
+      <div class="question">
+        How can I start a BYKEA Franchise?
+        <span class="arrow">⌄</span>
+      </div>
+      <div class="answer">
+        <p>
+          Owning a Bykea franchise offers a unique opportunity of being your own boss and empowering your local community. To read details about how to become a Bykea Franchisee, visit our Bykea Franchise page.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="Partners">
+  <div class="container">
+
+    <div class="section-title">Partners</div>
+
+    <!-- FAQ 1 (Open) -->
+    <div class="faq-item active">
+      <div class="question">
+        How do I become a Bykea Partner?
+        <span class="arrow">⌃</span>
+      </div>
+      <div class="answer">
+        <p>
+         Applying to be a Bykea partner is simple. Download the Bykea Partner app or visit the nearest Bykea Franchise to register. For more details visit the Bykea Partner Page.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-item">
+      <div class="question">
+       I want to become a Bykea Partner but don’t own a bike.
+        <span class="arrow">⌄</span>
+      </div>
+      <div class="answer">
+        <p>
+         We will connect you with a financial institution that provides easy installment plans or leases. In some areas, a Bykea partner can earn up to 5 times the monthly installment – making owning a bike easy.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-item">
+      <div class="question">
+       Are Bykea Partners insured?
+        <span class="arrow">⌄</span>
+      </div>
+      <div class="answer">
+        <p>
+          Safety of our customers and partners is the utmost priority. We provide our partners and customers an option of getting themselves insured during the ride.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="Businesses">
+  <div class="container">
+
+    <div class="section-title">Businesses</div>
+
+    <!-- FAQ 1 (Open) -->
+    <div class="faq-item active">
+      <div class="question">
+        My parcel got damaged during delivery, now what?
+        <span class="arrow">⌃</span>
+      </div>
+      <div class="answer">
+        <p>
+          Our Bykea partners are trained and understand the importance of delivering
+          your items with care. However, we provide an added layer of safety through
+          an opt-in insurance for parcels so even if there is any odd chance that it
+          gets damaged, your valuable items are completely protected. To find out
+          details about how to claim your coverage, contact us at +92 21 38654444.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-item">
+      <div class="question">
+        How can I start a Bykea Franchise?
+        <span class="arrow">⌄</span>
+      </div>
+      <div class="answer">
+        <p>
+          Owning a Bykea franchise offers a unique opportunity of being your own boss
+          and empowering your local community. To read details about how to become a
+          Bykea Franchisee, visit our Bykea Franchise page.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-item">
+      <div class="question">
+        Does Bykea have business solutions?
+        <span class="arrow">⌄</span>
+      </div>
+      <div class="answer">
+        <p>
+          Yes, Bykea offers business solutions including bulk deliveries, enterprise
+          logistics, and customized solutions for businesses of all sizes.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="testimonial-section">
+
+  <div class="small-title">CUSTOMERS SHARE THEIR EXPERIENCE</div>
+  <div class="main-title">A community full of stories</div>
+
+  <div class="slider">
+    <div class="slides">
+
+      <!-- SLIDE 1 -->
+      <div class="slide">
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="./assets/faq-img1.png" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p>
+              Excellent bike riding app with easy to understand navigations for
+              tracking your rider on the app. Affordable travel cost for two
+              wheelers having friendly riders.
+            </p>
+            <div class="author">Zubair A.</div>
+            <div class="dots">
+              <div class="dot active" onclick="goToSlide(0)"></div>
+              <div class="dot" onclick="goToSlide(1)"></div>
+              <div class="dot" onclick="goToSlide(2)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide">
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="./assets/faq-img2.png" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p>
+              Very useful app. Highly satisfied with their services. Quick response to any query and very helpful in case of any complaint.
+            </p>
+            <div class="author">Sundus S.</div>
+            <div class="dots">
+              <div class="dot" onclick="goToSlide(0)"></div>
+              <div class="dot active" onclick="goToSlide(1)"></div>
+              <div class="dot" onclick="goToSlide(2)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide">
+        <div class="testimonial-card">
+          <div class="testimonial-image">
+            <img src="./assets/faq-img3.png" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p>
+              Today I booked my first ride on BYKEA from my office at Jail Road to the railway station, fare estimate was Rs 75 to 90. My other options are Daewoo bus cost Rs 20 but you have to wait for at least 30 minutes to over an hour and second option was rickshaw at Rs 150 to 180. Bottomline, it suited me well, will surely use in the future.
+            </p>
+            <div class="author">Kashif Q.</div>
+            <div class="dots">
+              <div class="dot" onclick="goToSlide(0)"></div>
+              <div class="dot" onclick="goToSlide(1)"></div>
+              <div class="dot active" onclick="goToSlide(2)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+      <footer class="footer">
+  <div class="footer-top">
+
+    <!-- Brand Column -->
+    <div class="footer-col brand">
+      <img src="./assets/Bykea_logo.svg" alt="Bykea" class="logo">
+      <p class="tagline">Moving Pakistan Forward</p>
+
+      <p class="contact">📞 021 38654444</p>
+      <p class="contact">✉️ info@bykea.com</p>
+
+      <div class="app-buttons">
+        <img src="./assets/icon1.png" alt="App Store">
+        <img src="./assets/icon2.png" alt="Google Play">
+        <img src="./assets/icon3.png" alt="App Gallery">
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li>Company</li>
+        <li>Team</li>
+        <li>Mission, Vision & Values</li>
+        <li>Social Impact</li>
+        <li>Press & Media</li>
+        <li>Careers</li>
+        <li>Franchise</li>
+        <li>Security</li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li>Ride</li>
+        <li>Insurance</li>
+        <li>Shops</li>
+        <li>Delivery</li>
+        <li>Bykea For Business</li>
+      </ul>
+    </div>
+
+    <!-- Partner & Help -->
+    <div class="footer-col">
+      <h4>Bykea Partner</h4>
+      <ul>
+        <li>About Partner</li>
+      </ul>
+
+      <h4 class="mt">Help Center</h4>
+      <ul>
+        <li>FAQs</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>All Rights Reserved Bykea Pakistan</p>
+
+    <div class="footer-links">
+      <span>Privacy Policy</span>
+      <span>Accessibility</span>
+      <span>Safety</span>
+      <span>Terms</span>
+    </div>
+
+    <div class="social">
+      <span><i class="fa-brands fa-facebook"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+      /* TOGGLE MOBILE MENU */
+function toggleMenu() {
+  document.querySelector(".nav-menu").classList.toggle("active");
+}
+
+
+document.querySelectorAll(".faq-item").forEach(item=>{
+  item.addEventListener("click",()=>{
+    item.classList.toggle("active");
+  });
+});
+
+
+
+
+
+
+// BUTTON SCROLL LOGIC
+document.getElementById("btn-customers").addEventListener("click", () => {
+  document.getElementById("Customers").scrollIntoView({ behavior: "smooth" });
+  setActive("btn-customers");
+});
+
+document.getElementById("btn-partners").addEventListener("click", () => {
+  document.getElementById("Partners").scrollIntoView({ behavior: "smooth" });
+  setActive("btn-partners");
+});
+
+document.getElementById("btn-businesses").addEventListener("click", () => {
+  document.getElementById("Businesses").scrollIntoView({ behavior: "smooth" });
+  setActive("btn-businesses");
+});
+
+// ACTIVE BUTTON HANDLER
+function setActive(activeId) {
+  document.querySelectorAll(".btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
+  document.getElementById(activeId).classList.add("active");
+}
+
+
+
+
+
+let currentSlide = 0;
+const slides = document.querySelector(".slides");
+const totalSlides = 3;
+
+function goToSlide(index){
+  currentSlide = index;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Auto Slide
+setInterval(()=>{
+  currentSlide = (currentSlide + 1) % totalSlides;
+  goToSlide(currentSlide);
+},5000);
+
+</script>
+
+
+</body>
+</html>

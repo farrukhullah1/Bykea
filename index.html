@@ -19,73 +19,78 @@
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="nav-container">
+
+    <!-- Logo -->
     <div class="logo">
-      <a href="#"><img src="./assets/Bykea_logo.svg" alt="Bykea Logo"></a>
+      <a href="index.html">
+        <img src="./assets/Bykea_logo.svg" alt="Bykea Logo">
+      </a>
     </div>
 
+    <!-- Navigation Menu -->
     <nav class="nav-menu">
       <ul>
-        <li>About</li>
-        <li>Our Services</li>
-        <li>Partner</li>
-        <li>Franchises</li>
-        <li>Help Center</li>
-        <li>Careers</li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./partner.html">Partner</a></li>
+        <li><a href="./franchise.html">Franchises</a></li>
+        <li><a href="./contact.html">Help Center</a></li>
+        <li><a href="./faq.html">FAQs</a></li>
       </ul>
     </nav>
 
+    <!-- Contact Button -->
     <div class="nav-btn">
-      <a href="#">Contact Bykea</a>
+      <a href="./contact.html">Contact Bykea</a>
     </div>
 
+    <!-- Mobile Menu Toggle -->
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
   </div>
 </header>
 
 <!-- CONTENT -->
-<section class="content">
+<section class="content1">
   <h1>Bykea is your everyday, everything platform</h1>
-  <p>From helping you reach anywhere in the city at the lowest rates in town to getting anything delivered to anyone anywhere in the city. Bykea can do it all and more.</p>
+  <p>From helping you reach anywhere in the city at the lowest rates in town to getting anything delivered to anyone anywhere <br> in the city. Bykea can do it all and more.</p>
 </section>
 
-<!-- HERO -->
-<section class="page-wrapper">
-  <div class="ride-container">
-    <div class="tabs">
-      <a href="#" class="active">Ride</a>
-      <a href="#">Delivery</a>
-      <a href="#">Shops</a>
+<section class="hero">
+    <div class="content">
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" data-type="ride">Ride</button>
+            <button class="tab" data-type="delivery">Delivery</button>
+            <button class="tab" data-type="shops">Shops</button>
+        </div>
+
+        <!-- Text Content -->
+        <h1 id="title">Ride</h1>
+        <p id="description">
+            Bykea offers rides on motorbikes, rickshaws, and cars at the lowest fares in Karachi, Lahore and Islamabad.
+        </p>
+        <a href="#" class="read-more">Read More →</a>
     </div>
 
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Ride</h1>
-        <p>Bykea offers rides on motorbikes, rickshaws, and cars at the lowest fares in Karachi, Lahore and Islamabad. No matter what your destination is, a Bykea is always there for you. Let’s get moving.</p>
-        <a href="#">Read More →</a>
-      </div>
-      <div class="hero-image">
-        <img src="./assets/03-Bykea-Lower-Banner-SJ-Ride-e15839371395834.png" alt="Ride Vehicles">
-      </div>
+    <!-- Image -->
+    <div class="image">
+        <img id="heroImage" src="./assets/03-Bykea-Lower-Banner-SJ-Ride-e15839371395834.png" alt="Ride">
     </div>
-  </div>
 </section>
 
-<!-- SLIDER -->
-<section class="slider-wrapper">
-  <div class="slider-container">
-    <div class="nav left" onclick="moveSlide(-1)">&#10094;</div>
-    <div class="nav right" onclick="moveSlide(1)">&#10095;</div>
-
-    <div class="slider" id="slider">
-      <div class="slide">
-        <img src="./assets/banner-1.jpg" alt="Slide 1">
-      </div>
-      <div class="slide">
-        <img src="./assets/Fold_01_skywheel-1.png" alt="Slide 2">
+  <!-- HERO SLIDER -->
+  <section class="slider-wrapper">
+    <div class="slider-container">
+      <div class="nav left" onclick="moveHeroSlide(-1)">&#10094;</div>
+      <div class="nav right" onclick="moveHeroSlide(1)">&#10095;</div>
+      <div class="slider" id="hero-slider">
+        <div class="slide"><img src="./assets/banner-1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="./assets/Fold_01_skywheel-1.png" alt="Slide 2"></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -233,33 +238,50 @@
 
 
 
-<section class="community">
-  <h2 class="section-title">A community full of stories</h2>
-
-  <div class="story-card">
-    <div class="story-image">
-      <img src="./assets/kashif-mobile.jpg" alt="Ride experience">
-    </div>
-
-    <div class="story-content">
-      <p class="story-text">
-        “Today I booked my first ride on BYKEA from my office at Jail Road to
-        the railway station, fare estimate was Rs 75 to 90. My other options
-        are Daewoo bus cost Rs 20 but you have to wait for at least 30 minutes
-        to over an hour and second option was rickshaw at Rs 150 to 180.
-        Bottomline, it suited me well, will surely use in the future.”
-      </p>
-
-      <p class="story-author">Kashif Q.</p>
-
-      <div class="story-indicators">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+ <!-- TESTIMONIAL SLIDER -->
+  <section class="testimonial-section">
+    <div class="small-title">CUSTOMERS SHARE THEIR EXPERIENCE</div>
+    <div class="main-title">A community full of stories</div>
+    <div class="testimonial-slider">
+      <div class="testimonial-slides" id="testimonial-slides">
+        <!-- SLIDE 1 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-image"><img src="./assets/faq-img1.png" alt=""></div>
+            <div class="testimonial-content">
+              <p>Excellent bike riding app with easy to understand navigations for tracking your rider on the app. Affordable travel cost for two wheelers having friendly riders. Wish all the best of luck!.</p>
+              <div class="author">Zubair A.</div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDE 2 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-image"><img src="./assets/faq-img2.png" alt=""></div>
+            <div class="testimonial-content">
+              <p>Very useful app. Highly satisfied with their services. Quick response to any query and very helpful in case of any complaint.</p>
+              <div class="author">Sundus S.</div>
+            </div>
+          </div>
+        </div>
+        <!-- SLIDE 3 -->
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-image"><img src="./assets/faq-img3.png" alt=""></div>
+            <div class="testimonial-content">
+              <p>Today I booked my first ride on BYKEA from my office at Jail Road to the railway station, fare estimate was Rs 75 to 90. My other options are Daewoo bus cost Rs 20 but you have to wait for at least 30 minutes to over an hour and second option was rickshaw at Rs 150 to 180. Bottomline, it suited me well, will surely use in the future.</p>
+              <div class="author">Kashif Q.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <div class="dot active" onclick="goToTestimonialSlide(0)"></div>
+        <div class="dot" onclick="goToTestimonialSlide(1)"></div>
+        <div class="dot" onclick="goToTestimonialSlide(2)"></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 

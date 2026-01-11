@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bykea | Services</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/svg+xml" href="./assets/cropped-fav-icon-1-32x32.png">
+
+<style>
+    /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #eee;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo a img {
+  height: 30px;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Link Styling */
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #00aa2f;
+  transition: opacity 0.3s, color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  opacity: 0.7;
+  color: #008d45;
+}
+
+/* Contact Button */
+.nav-btn a {
+  background: #00aa2f;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.nav-btn a:hover {
+  background: #008d45;
+}
+
+/* Mobile Menu Icon */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #00aa2f;
+}
+
+/* *****************************
+   Responsive Navbar (tablet/mobile)
+   ***************************** */
+@media (max-width: 992px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: none;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-menu ul li a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+    .bykea-section {
+      background-color: #0bb23b;
+      padding: 40px 60px;
+    }
+
+    .bykea-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .bykea-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .bykea-content h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .bykea-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #eafff1;
+      max-width: 520px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .bykea-image {
+      flex: 1;
+      min-width: 280px;
+      text-align: right;
+    }
+
+    .bykea-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* =========================
+       TABLET RESPONSIVE
+    ========================== */
+    @media (max-width: 1024px) {
+      .bykea-section {
+        padding: 35px 40px;
+      }
+
+      .bykea-content h1 {
+        font-size: 40px;
+      }
+    }
+
+    /* =========================
+       MOBILE RESPONSIVE
+    ========================== */
+    @media (max-width: 768px) {
+      .bykea-section {
+        padding: 30px 20px;
+      }
+
+      .bykea-container {
+        flex-direction: column;
+        text-align: left;
+        gap: 30px;
+      }
+
+      .bykea-content h1 {
+        font-size: 32px;
+      }
+
+      .bykea-content p {
+        font-size: 16px;
+      }
+
+      .bykea-image {
+        text-align: center;
+      }
+
+      .bykea-image img {
+        max-width: 90%;
+      }
+    }
+
+    /* =========================
+       SMALL MOBILE
+    ========================== */
+    @media (max-width: 480px) {
+      .bykea-content h1 {
+        font-size: 28px;
+      }
+
+      .bykea-content p {
+        font-size: 15px;
+      }
+    }
+
+
+
+  /* ===== PAGE WRAPPER (body ki jagah) ===== */
+  .page-wrapper {
+    background: #f2f2f2;
+    padding: 40px 20px;
+  }
+
+  /* ===== MAIN SECTION ===== */
+  .carpool-section {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+
+  /* ===== LEFT CONTENT ===== */
+  .content {
+    flex: 1;
+  }
+
+  .content h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1d2b53;
+    margin-bottom: 10px;
+  }
+
+  .content h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #1d2b53;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .steps {
+    padding-left: 20px;
+  }
+
+  .steps li {
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #111;
+  }
+
+  .steps strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .steps a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .steps a:hover {
+    text-decoration: underline;
+  }
+
+  .whatsapp {
+    color: #e63946;
+    font-weight: 600;
+  }
+
+  /* ===== RIGHT IMAGE ===== */
+  .image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 992px) {
+    .carpool-section {
+      padding: 40px;
+      gap: 30px;
+    }
+
+    .content h1 {
+      font-size: 34px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carpool-section {
+      flex-direction: column;
+    }
+
+    .content h1 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carpool-section {
+      padding: 25px;
+    }
+
+    .content h1 {
+      font-size: 26px;
+    }
+
+    .steps li {
+      font-size: 15px;
+    }
+  }
+
+
+
+  * {
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+/* ===== SECTION WRAPPER ===== */
+.features-wrapper {
+  padding: 70px 20px;
+}
+
+/* ===== GRID ===== */
+.features-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+/* ===== CARD ===== */
+.feature-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 50px 30px;
+  text-align: center;
+  min-height: 280px; /* size control */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* ===== ICON ===== */
+.icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 22px;
+}
+
+.icon.green {
+  background: #0bb23b;
+  color: #ffffff;
+}
+
+/* ===== TEXT ===== */
+.feature-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1d2b53;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+    padding: 40px 25px;
+  }
+}
+
+
+
+
+
+/* ===== WRAPPER ===== */
+.cta-wrapper {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+/* ===== CONTENT ===== */
+.cta-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ===== HEADING ===== */
+.cta-content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1d2b53;
+  margin-bottom: 30px;
+}
+
+.cta-content h2 span {
+  font-weight: 800;
+}
+
+.cta-link {
+  color: #1d2b53;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+/* ===== STORE BUTTONS ===== */
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-btn img {
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.store-btn img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .store-btn img {
+    height: 42px;
+  }
+}
+
+
+
+
+
+    
+.footer {
+  background: #252b48;
+  color: #ffffff;
+  padding: 60px 70px 30px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 40px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+
+
+.app-buttons img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.footer-col ul li:hover {
+  opacity: 1;
+}
+
+.mt {
+  margin-top: 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.social span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 40px 30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="./assets/Bykea_logo.svg" alt="Bykea Logo">
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="./partner.html">Partner</a></li>
+        <li><a href="./franchise.html">Franchises</a></li>
+        <li><a href="./contact.html">Help Center</a></li>
+        <li><a href="./faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact Button -->
+    <div class="nav-btn">
+      <a href="./contact.html">Contact Bykea</a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  </div>
+</header>
+
+
+<section class="bykea-section">
+  <div class="bykea-container">
+
+    <div class="bykea-content">
+      <h1>
+        Hassle Free Corporate Commuting Solutions
+      </h1>
+
+      <p>
+        Our corporate commuting solution delivers convenience, up to 40% cost savings, and safety with Monthly Carpool.
+      </p>
+    </div>
+
+    <div class="bykea-image">
+      <img src="./assets/service-img.png" alt="Bykea Services">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<div class="page-wrapper">
+
+  <section class="carpool-section">
+
+    <!-- LEFT CONTENT -->
+    <div class="content">
+      <h5>Bykea Carpool</h5>
+      <h1>A Corporate Commuting Solution</h1>
+
+      <ol class="steps">
+        <li>
+          <strong>Fill out the form</strong>
+          Corporate clients, click this link to fill out the form:
+          <a href="#">Click here</a>
+        </li>
+
+        <li>
+          <strong>Talk to us</strong>
+          A Bykea representative will contact you and share a customized plan based on your requirements.
+          contact us on WhatsApp at
+          <span class="whatsapp">0343 - 1234567</span>
+        </li>
+
+        <li>
+          <strong>Dashboard Sharing</strong>
+          Bykea will provide a dashboard to monitor your service consumption, track online payments,
+          and access other important information.
+        </li>
+      </ol>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="image-box">
+      <img src="./assets/service-img1.png" alt="Bykea Dashboard">
+    </div>
+
+  </section>
+
+</div>
+
+
+
+<div class="features-wrapper">
+
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="icon green">💳</div>
+      <h3>Economical</h3>
+      <p>Upto 40% Savings on Monthly Commute</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon green">🛡️</div>
+      <h3>Reliable</h3>
+      <p>Real-Time Tracking, Safety, Insurance Feature</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon green">📱</div>
+      <h3>Online Payments</h3>
+      <p>Easy Online Payments</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon green">💼</div>
+      <h3>One Time Payment</h3>
+      <p>One Booking Sorts You For The Whole Month</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="cta-wrapper">
+
+  <div class="cta-content">
+    <h2>
+      Ready to get <span>BYKEA Carpool Service?</span>
+      <a href="#" class="cta-link">Let’s get in touch</a>
+    </h2>
+
+    <div class="store-buttons">
+      <a href="#" class="store-btn">
+        <img src="./assets/icon1.png" alt="App Store">
+      </a>
+
+      <a href="#" class="store-btn">
+        <img src="./assets/icon2.png" alt="Google Play">
+      </a>
+
+      <a href="#" class="store-btn">
+        <img src="./assets/icon3.png" alt="App Gallery">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  <footer class="footer">
+  <div class="footer-top">
+
+    <!-- Brand Column -->
+    <div class="footer-col brand">
+      <img src="./assets/Bykea_logo.svg" alt="Bykea" class="logo">
+      <p class="tagline">Moving Pakistan Forward</p>
+
+      <p class="contact">📞 021 38654444</p>
+      <p class="contact">✉️ info@bykea.com</p>
+
+      <div class="app-buttons">
+        <img src="./assets/icon1.png" alt="App Store">
+        <img src="./assets/icon2.png" alt="Google Play">
+        <img src="./assets/icon3.png" alt="App Gallery">
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="footer-col">
+      <h4>About</h4>
+      <ul>
+        <li>Company</li>
+        <li>Team</li>
+        <li>Mission, Vision & Values</li>
+        <li>Social Impact</li>
+        <li>Press & Media</li>
+        <li>Careers</li>
+        <li>Franchise</li>
+        <li>Security</li>
+      </ul>
+    </div>
+
+    <!-- Products -->
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li>Ride</li>
+        <li>Insurance</li>
+        <li>Shops</li>
+        <li>Delivery</li>
+        <li>Bykea For Business</li>
+      </ul>
+    </div>
+
+    <!-- Partner & Help -->
+    <div class="footer-col">
+      <h4>Bykea Partner</h4>
+      <ul>
+        <li>About Partner</li>
+      </ul>
+
+      <h4 class="mt">Help Center</h4>
+      <ul>
+        <li>FAQs</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>All Rights Reserved Bykea Pakistan</p>
+
+    <div class="footer-links">
+      <span>Privacy Policy</span>
+      <span>Accessibility</span>
+      <span>Safety</span>
+      <span>Terms</span>
+    </div>
+
+    <div class="social">
+      <span><i class="fa-brands fa-facebook"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+      <span><i class="fa-brands fa-twitter"></i></span>
+      <span><i class="fa-brands fa-linkedin"></i></span>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+    /* TOGGLE MOBILE MENU */
+function toggleMenu() {
+  document.querySelector(".nav-menu").classList.toggle("active");
+}
+
+</script>
+</body>
+</html>
